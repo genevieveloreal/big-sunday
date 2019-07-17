@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Big Sunday - Web Design, Branding + Copywriting</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./css/style.css" type="text/css" />
+  </head>
+  <body>
+    <div class="hero text-center">
+        <div class="container">
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#services">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#portfolio">Our Work</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div class="jumbotron">
+            <div class="container">
+                <h1 class="display-3">Big Sunday</h1>
+                <h6>Web Design + Dev | Branding | Copywriting</h6>
+            </div>
+        </div>
+    </div>
+    <div class="services section" id="services">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-12 text-left">
+                    <h4></h4>
+                </div>
+                <div class="col-lg-4">
+                    <img src="https://via.placeholder.com/200x200" class="img-fluid rounded-circle">
+                </div>
+                <div class="col-lg-4">
+                    <img src="https://via.placeholder.com/200x200" class="img-fluid rounded-circle">
+                </div>
+                <div class="col-lg-4">
+                    <img src="https://via.placeholder.com/200x200" class="img-fluid rounded-circle">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="about section" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7">
+                    <img src="https://images.unsplash.com/photo-1460518451285-97b6aa326961?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" class="img-fluid">
+                </div>
+                <div class="col-lg-5">
+                    <h3>Hey there! 👋</h3>
+                    <p>Chupa chups jelly-o candy biscuit jelly. Donut dessert marshmallow cotton candy sweet roll cotton candy. Cookie wafer sweet tiramisu wafer tiramisu. Marshmallow pastry cotton candy ice cream cookie oat cake icing gummi bears. Marzipan sugar plum gummies wafer caramels jelly sweet roll pudding apple pie. Caramels wafer jelly bonbon tootsie roll bear claw soufflé biscuit.</p>
+                    <p>Powder caramels toffee powder brownie lemon drops pastry cake. Wafer dessert chocolate tiramisu cupcake tiramisu halvah caramels. Lemon drops cookie danish.</p>
+                    <a class="btn btn-primary" href="#contact">Let's chat</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio section text-center" id="portfolio">
+        <div class="">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-xs-12 col">
+                    <img src="https://via.placeholder.com/700x450" class="img-fluid">
+                </div>
+                <div class="col-lg-4 col-md-6 col-xs-12 col">
+                    <img src="https://via.placeholder.com/700x450" class="img-fluid">
+                </div>
+                <div class="col-lg-4 col-md-6 col-xs-12 col">
+                    <img src="https://via.placeholder.com/700x450" class="img-fluid">
+                </div>
+                <div class="col-lg-4 col-md-6 col-xs-12 col">
+                    <img src="https://via.placeholder.com/700x450" class="img-fluid">
+                </div>
+                <div class="col-lg-4 col-md-6 col-xs-12 col">
+                    <img src="https://via.placeholder.com/700x450" class="img-fluid">
+                </div>
+                <div class="col-lg-4 col-md-6 col-xs-12 col">
+                    <img src="https://via.placeholder.com/700x450" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="contact section text-center" id="contact">
+        <h2>Drop us a line 💌</h2>
+        <a href="#">Linky link</a>
+        <a href="#">Linky link</a>
+        <a href="#">Linky link</a>
+    </div>
+    <div class="footer text-center bg-dark text-white">
+        <div class="container">
+            <p>Footer</p>
+        </div>
+    </div>
+  </body>
+  <script>
+    // @TODO: Relocate this into its own script later
+    $(document).ready(function(){
+        // Add smooth scrolling to all links
+        $("a").on('click', function(event) {
+    
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+    
+            // Store hash
+            var hash = this.hash;
+    
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+            scrollTop: $(hash).offset().top
+            }, 800, function(){
+    
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+            });
+        } // End if
+        });
+    });
+    </script>
+</html>
