@@ -2,28 +2,87 @@
     max-width: 1110px;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "futura-pt";
+    font-weight: 700;
+    color: #3a3c42;
+}
+
+body {
+    color: #75787F;
+    line-height: 30px;
+    font-family: "europa";
+}
+
+a {
+    color: #7ee1ff;
+    font-weight: 700;
+}
+
 .hero {
-    background: #e9ecef;
+    background-image: url('https://images.unsplash.com/photo-1504309092620-4d0ec726efa4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');
+    background-position: center;
+    background-size: cover;
 }
 
 .hero .jumbotron {
     padding: 150px 0px;
+    background: rgba(255,255,255,0);
 }
 
 .hero h1 {
     font-weight: 700;
+    color: #fbf4ec
 }
 
 .hero h6 {
     text-transform: uppercase;
-    margin-top: 30px;
+    margin-top: 15px;
     font-size: 14px;
     letter-spacing: 1.4px;
+    color: #fbf4ec;
+    font-weight: 700;
 }
+
+a.nav-link {
+    color: #084c61;
+    position: relative;
+    z-index: 1;
+    font-weight: 600;
+    padding: 20px 0px 10px 20px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: 0.2s all;
+}
+
+a.nav-link::after {
+    content: '';
+    height: 5px;
+    width: 0px;
+    background: rgba(255, 255, 255, 0.8);
+    display: block;
+    position: absolute;
+    right: -10px;
+    bottom: 12px;
+    z-index: -1;
+    transition: 0.2s all;
+}
+
+a.nav-link:hover::after {
+    width: 100%;
+}
+
 
 .services {
     position: relative;
-    height: 350px;
+    height: 600px;
     margin-bottom: -100px;
 }
 
@@ -36,8 +95,15 @@
     left: 0;
     right: 0;
     top: -100px;
-    min-height: 350px;
     padding: 90px;
+}
+
+.services img {
+    margin-bottom: 15px;
+}
+
+.services .service-icon {
+    padding: 30px 0px;
 }
 
 .portfolio .col {
@@ -56,4 +122,5 @@
 
 .footer {
     padding: 30px 0px;
+    background: #273043;
 }
