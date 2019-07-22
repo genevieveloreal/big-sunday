@@ -28,6 +28,7 @@ a {
     background-image: url('https://images.unsplash.com/photo-1504309092620-4d0ec726efa4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');
     background-position: center;
     background-size: cover;
+    box-shadow: 0 20px 60px 40px #EEE;
 }
 
 .hero .jumbotron {
@@ -70,13 +71,13 @@ a.nav-link::after {
     display: block;
     position: absolute;
     right: -10px;
-    bottom: 12px;
+    bottom: 16px;
     z-index: -1;
     transition: 0.2s all;
 }
 
 a.nav-link:hover::after {
-    width: 100%;
+    width: 80%;
 }
 
 
