@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://use.typekit.net/cbo8upu.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="./css/style.css" type="text/css" />
+    <link rel="stylesheet" href="./css/anicollection.css">
   </head>
   <body>
     <div class="hero">
@@ -36,23 +37,23 @@
     <div class="services section" id="services">
         <div class="container">
             <div class="row text-center">
-                <div class="col-lg-12 text-left">
+                <div class="col-lg-12 text-left no-opacity" data-anijs="if: load, on: window, do: fadeIn animated, before: scrollReveal, after: holdAnimClass">
                     <h3>Hi, we're Big Sunday! 👋</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec laoreet lorem. Phasellus lobortis, sapien vel elementum finibus, leo neque ornare sem, commodo dictum est felis fermentum libero. </p>
                     <a href="#">Wafer?</a>
                 </div>
-                <div class="service-icon col-lg-4">
-                    <img src="https://via.placeholder.com/200x200" class="img-fluid rounded-circle">
+                <div class="service-icon col-lg-4" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal, after: holdAnimClass">
+                    <div id="example" class="lottie-anims-service"></div>
                     <h4>Heading</h4>
                     <p>Paragraph</p>
                 </div>
-                <div class="service-icon col-lg-4">
-                    <img src="https://via.placeholder.com/200x200" class="img-fluid rounded-circle">
+                <div class="service-icon col-lg-4" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal, after: holdAnimClass">
+                    <div id="example2" class="lottie-anims-service"></div>
                     <h4>Heading</h4>
                     <p>Paragraph</p>
                 </div>
-                <div class="service-icon col-lg-4">
-                    <img src="https://via.placeholder.com/200x200" class="img-fluid rounded-circle">
+                <div class="service-icon col-lg-4" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal, after: holdAnimClass">
+                    <div id="example3" class="lottie-anims-service"></div>
                     <h4>Heading</h4>
                     <p>Paragraph</p>
                 </div>
@@ -62,14 +63,12 @@
     <div class="about section" id="about">
         <div class="container">
             <div class="row">
-                <div class="col-lg-7">
+                <div class="col-lg-7 no-opacity" data-anijs="if: scroll, on: window, do: fadeInLeft animated, before: scrollReveal, after: holdAnimClass">
                     <img src="https://images.unsplash.com/photo-1460518451285-97b6aa326961?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" class="img-fluid">
                 </div>
-                <div class="col-lg-5">
+                <div class="col-lg-5 text-col no-opacity" data-anijs="if: scroll, on: window, do: fadeInRight animated, before: scrollReveal, after: holdAnimClass">
                     <h3>Ready for our sick value proposition? 👋</h3>
-                    <p>Chupa chups jelly-o candy biscuit jelly. Donut dessert marshmallow cotton candy sweet roll cotton candy. Cookie wafer sweet tiramisu wafer tiramisu. Marshmallow pastry cotton candy ice cream cookie oat cake icing gummi bears. Marzipan sugar plum gummies wafer caramels jelly sweet roll pudding apple pie. Caramels wafer jelly bonbon tootsie roll bear claw soufflé biscuit.</p>
-                    <p>Powder caramels toffee powder brownie lemon drops pastry cake. Wafer dessert chocolate tiramisu cupcake tiramisu halvah caramels. Lemon drops cookie danish.</p>
-                    <a class="btn btn-primary" href="#contact">Let's chat</a>
+                    <p>Chupa chups jelly-o candy biscuit jelly. Donut dessert marshmallow cotton candy sweet roll cotton candy.</p>
                 </div>
             </div>
         </div>
@@ -90,6 +89,7 @@
                     <img src="https://via.placeholder.com/700x700" class="img-fluid">
                 </div>
             </div>
+            <a class="btn btn-primary" href="#contact">Let's chat</a>
         </div>
     </div>
     <div class="contact section text-center" id="contact">
@@ -103,6 +103,13 @@
             <p>Footer</p>
         </div>
     </div>
+      
+    <script src="js/lottie.min.js" type="text/javascript"></script>
+    <script src="https://anijs.github.io/lib/anijs/anijs-min.js"></script> 
+    <script src="https://anijs.github.io/lib/anijs/helpers/dom/anijs-helper-dom-min.js"></script>
+    <script src="js/anijs-helper-scrollreveal-min.js" type="text/javascript"></script>
+    <script src="js/index.js" type="text/javascript"></script>
+    <script src="js/redirection.js" type="text/javascript"></script>
   </body>
   <script>
     // @TODO: Relocate this into its own script later
